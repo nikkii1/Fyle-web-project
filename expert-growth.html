@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>expert-growth</title>
+    <style>
+        #main-div1 {
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+        }
+
+        h4 {
+            margin-top: 100px;
+            color: rgb(241, 52, 52);
+        }
+
+        #outer-div {
+            display: flex;
+            justify-content: space-evenly;
+            gap: 10px; /* Adjust this value to reduce space between the inner-div elements */
+        }
+
+        .inner-div {
+            width: 200px;
+            height: 200px;
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .inner-div:hover {
+            background-color: #f0f0f0;
+            transform: translateY(-10px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .image-section {
+            width: 50px;
+            height: 50px;
+            margin-bottom: 10px;
+        }
+
+        .h1-tag {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body style="background-color: #ECFFE6">
+    <a href="index.html">Home</a>
+    <div id="main-div1">
+        <h4>EXPERTS GROWTH</h4>
+        <h1>OUR COMPANY GROWTH</h1>
+    </div>
+    <div id="outer-div">
+        <div class="inner-div">
+            <img class="image-section" src="heart (1).png" alt="">
+            <h1 class="h1-tag">199 +</h1>
+            <p>Satisfied Customer</p>
+        </div>
+        <div class="inner-div">
+            <img class="image-section" src="time.png" alt="">
+            <h1 class="h1-tag">1591 +</h1>
+            <p>Days of Operations</p>
+        </div>
+        <div class="inner-div">
+            <img class="image-section" src="checked.png" alt="">
+            <h1 class="h1-tag">283 +</h1>
+            <p>Complete Project</p>
+        </div>
+        <div class="inner-div">
+            <img class="image-section" src="trophy.png" alt="">
+            <h1 class="h1-tag">75 +</h1>
+            <p>Win Awards</p>
+        </div>
+    </div>
+</body>
+
+</html>

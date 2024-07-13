@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Project</title>
+    <style>
+        h4 {
+            padding-top: 100px;
+            color: rgb(202, 53, 53);
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h1 {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        #container-1 {
+            text-align: center;
+        }
+
+        #container-2 {
+            width: 600px;
+            height: 400px;
+            margin-left: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #container-2 img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: cover;
+        }
+
+        #container-3 {
+            background-color: #eeeeee;
+            width: 250px;
+            height: 400px;
+            margin-right: 340px;
+        }
+
+        #outer-div {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .inner-div {
+            width: 250px;
+            height: 131px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            padding-top: 5px;
+            padding-left: 10px;
+            cursor: pointer;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .inner-div:hover {
+            background-color: #f0f0f0;
+            transform: translateY(-5px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        #box-2 {
+            background-color: rgb(241, 52, 52);
+            color: white;
+            width: 240px;
+            height: 131px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            padding-top: 5px;
+            padding-left: 10px;
+            cursor: pointer;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        #box-2:hover {
+            background-color: rgb(220, 40, 40);
+            transform: translateY(-5px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+
+<body style="background-color: #ECFFE6">
+    <div id="container-1">
+        <h4>OUR PROJECT</h4>
+        <h1>WHY WE ARE THE BEST</h1>
+    </div>
+    <div id="outer-div">
+        <div id="container-2">
+            <img id="mainImage" src="image1.PNG" alt="Fruit Image">
+        </div>
+        <div id="container-3">
+            <div class="inner-div" onclick="changeImage('image1.PNG')">
+                <p><b>Genderies kei - Japan's Hot</b><br><br>set to launch on the manufacture's new A330neo aircraft in
+                    2017. it's offering lots of</p>
+            </div>
+            <div id="box-2" onclick="changeImage('image2.jpg')">
+                <p><b>Better strategy & Quality</b><br><br>set to launch on the manufacture's new A330neo aircraft in
+                    2017. it's offering lots of</p>
+            </div>
+            <div class="inner-div" onclick="changeImage('image3.jpg')">
+                <p><b>Genderies kei - Japan's Hot</b><br><br>set to launch on the manufacture's new A330neo aircraft in
+                    2017. it's offering lots of</p>
+            </div>
+        </div>
+    </div>
+    <a href="index.html">Home Page</a>
+
+    <script>
+        function changeImage(imageSrc) {
+            document.getElementById('mainImage').src = imageSrc;
+        }
+    </script>
+</body>
+
+</html>

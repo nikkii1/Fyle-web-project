@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What We Do</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .container {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 300px;
+            margin-bottom: 20px;
+        }
+
+        .image-container {
+            border-radius: 15px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .image {
+            width: 300px;
+            height: 350px;
+            display: block;
+            object-fit: cover;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+
+
+        .dot-button {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: black;
+            margin: 0 5px;
+            cursor: pointer;
+            border: none;
+            outline: none;
+        }
+
+        .dot-button:focus {
+            outline: none;
+        }
+
+        h5 {
+            margin-bottom: 10px;
+            color: rgb(202, 53, 53);
+            text-align: left;
+            margin-top: 50px;
+        }
+
+        h2 {
+            margin-top: 0;
+            text-align: left;
+        }
+
+        body {
+            background-color: #ECFFE6;
+        }
+
+        .header {
+            width: 500px;
+            margin-left: 110px;
+        }
+
+        #main-div {
+            display: flex;
+        }
+
+        .lorem {
+            margin-top: 50px;
+            width: 500px;
+        }
+
+        a {
+            margin-left: 110px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="main-div">
+        <div class="header">
+            <h5>WHAT WE DO</h5>
+            <h2>SERVICES PROVIDED<br>FOR YOU</h2>
+        </div>
+        <div class="lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore veniam obcaecati ad
+            maxime assumenda perspiciatis quos aliquid, dignissimos, tempore rem debitis minus quae iste, enim esse?
+            Doloremque eaque ut aliquid.</div>
+    </div>
+    <div class="container mt-5">
+        <div class="image-container">
+            <img id="image1" src="photo1.PNG" class="image" alt="Student Image">
+        </div>
+        <div class="image-container">
+            <img id="image2" src="photo2.PNG" class="image" alt="Web Image">
+        </div>
+        <div class="image-container">
+            <img id="image3" src="photo3.PNG" class="image" alt="Laptop Image">
+        </div>
+        <div class="image-container">
+            <img id="image4" src="plant.jpg" class="image" alt="Plant Image">
+        </div>
+    </div>
+
+    <!-- Dot buttons -->
+    <div class="text-center">
+        <button class="dot-button" onclick="changeImage('photo1.PNG', 'photo2.PNG', 'photo3.PNG', 'plant.jpg')"></button>
+        <button class="dot-button" onclick="changeImage('photo2.PNG', 'photo3.PNG', 'plant.jpg', 'photo1.PNG')"></button>
+        <button class="dot-button" onclick="changeImage('photo3.PNG', 'plant.jpg', 'photo1.PNG', 'photo2.PNG')"></button>
+        <button class="dot-button" onclick="changeImage('plant.jpg', 'photo1.PNG', 'photo2.PNG', 'photo3.PNG')"></button>
+    </div>
+    <a href="https://www.fylehq.com/" target="_blank">Read More</a>
+    <a href="index.html">Home Page</a>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        function changeImage(img1, img2, img3, img4) {
+            document.getElementById('image1').src = img1;
+            document.getElementById('image2').src = img2;
+            document.getElementById('image3').src = img3;
+            document.getElementById('image4').src = img4;
+        }
+    </script>
+</body>
+
+</html>
